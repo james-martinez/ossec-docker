@@ -12,5 +12,5 @@ jobs:
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_TOKEN}}
     - run: | 
-        docker build -t ghcr.io/james-martinez/ossec-docker/ossec:latest .
-        docker push ghcr.io/james-martinez/ossec-docker/ossec:latest
+        docker build -t ghcr.io/${{GITHUB_REPOSITORY}}/ossec:latest -t ghcr.io/${{GITHUB_REPOSITORY}}/ossec:${{GITHUB_RUN_NUMBER}} .
+        docker push ghcr.io/${{GITHUB_REPOSITORY}}/ossec:latest ghcr.io/${{GITHUB_REPOSITORY}}/ossec:${{GITHUB_RUN_NUMBER}}
