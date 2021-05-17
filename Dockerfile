@@ -20,7 +20,7 @@ RUN \
 	yum -y update && \
 	yum -y install wget postfix && \
 	yum clean all && \
-	cd /root NON_INT=1 wget -q -O - https://updates.atomicorp.com/installers/atomic |sh && \
+	cd /root; NON_INT=1 wget -q -O - https://updates.atomicorp.com/installers/atomic |sh && \
 	yum -y install ossec-hids-server oum && \
 	chmod 755 /ossec-server.sh && \
 	chmod 755 /init.sh && \
