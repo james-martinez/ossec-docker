@@ -1,5 +1,8 @@
 name: Github Docker Image CI
-on: push
+on:
+  push:
+    paths:
+      - 'Dockerfile'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,4 +16,5 @@ jobs:
         password: ${{secrets.DOCKER_TOKEN}}
     - run: | 
         docker build -t ghcr.io/$GITHUB_REPOSITORY/ossec:latest -t ghcr.io/$GITHUB_REPOSITORY/ossec:$GITHUB_RUN_NUMBER .
-        docker push ghcr.io/$GITHUB_REPOSITORY/ossec:latest ghcr.io/$GITHUB_REPOSITORY/ossec:$GITHUB_RUN_NUMBER
+        docker push ghcr.io/$GITHUB_REPOSITORY/ossec:latest 
+        docker push ghcr.io/$GITHUB_REPOSITORY/ossec:$GITHUB_RUN_NUMBER
