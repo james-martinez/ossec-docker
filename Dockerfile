@@ -33,7 +33,7 @@ RUN \
 VOLUME ["/var/ossec/data"]
 
 # Expose ports for sharing
-EXPOSE 1514/udp 1515/tcp
+EXPOSE 514/udp 1514/udp 1515/tcp
 
 #
 # Define default command.
