@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'Dockerfile'
+      - '.github/workflows/github.yml'
 jobs:
   build:
     runs-on: ubuntu-latest
