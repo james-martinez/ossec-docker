@@ -1,10 +1,10 @@
-![Master build](https://github.com/james-martinez/ossec-docker/blob/master/.github/workflows/github.yml/badge.svg?branch=master)
+![Master build](https://github.com/james-martinez/ossec-docker/actions/workflows/github.yml/badge.svg?branch=master)
 
 **Description**
 
 OSSEC HIDS Server v3.6.0
 
-Based on Centos 8, this is the official OSSEC project docker container. Note: this can be easily adapted for RHEL 7 for FIPS-140-2 compliance. 
+Based on Centos 8, this is the official OSSEC project docker container. Note: this can be easily adapted for RHEL 8 for FIPS-140-2 compliance. 
 
 By default this container will create a volume to store configuration, log and agent key data 
 under /var/ossec/data.  Additionally it is configured with a local instance of postfix to 
