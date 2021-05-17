@@ -24,7 +24,7 @@ send alert notifications.
 	docker volume create ossec-data
 
 
-        docker run -d -p 514:514/udp -p 1514:1514/udp -p 1515:1515/tcp -v ossec-data:/var/ossec/data --name ossec-server atomicorp/ossec-docker
+        docker run -d -p 514:514/udp -p 1514:1514/udp -p 1515:1515/tcp -v ossec-data:/var/ossec/data --name ossec-server ghcr.io/james-martinez/ossec-docker/ossec
 
 
 **Stopping:**
