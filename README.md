@@ -1,4 +1,4 @@
-![Master build](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=master)
+![Master build](https://github.com/james-martinez/ossec-docker/blob/master/.github/workflows/github.yml/badge.svg?branch=master)
 
 **Description**
 
